@@ -7,11 +7,14 @@ namespace dx3d
 	class Game: public Base
 	{
 	public:
-		Game();
+		explicit Game(const GameDesc& desc);
 		virtual ~Game() override;
 
 		virtual void run() final;
 	private:
+		// FIRST defined attribute is LAST to be deallocated
+		std::unique_ptr<Logger> m_loggerPtr{};
+		std::unique_ptr<GraphicsEngine> m_graphicsEngine{};
 		std::unique_ptr<Window> m_display{};
 		bool m_isRunning{ true };
 	};

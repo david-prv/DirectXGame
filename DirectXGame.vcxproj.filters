@@ -30,6 +30,15 @@
     <ClCompile Include="DX3D\Source\Dx3D\Game\Win32\Win32Game.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="DX3D\Source\Dx3D\Graphics\GraphicsEngine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DX3D\Source\Dx3D\Graphics\RenderSystem.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DX3D\Source\Dx3D\Core\Logger.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DX3D\Include\DX3D\Core\Base.h">
@@ -47,5 +56,20 @@
     <ClInclude Include="DX3D\Include\DX3D\All.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Graphics\GraphicsEngine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Source\Dx3D\Graphics\RenderSystem.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Core\Logger.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Core\Common.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
