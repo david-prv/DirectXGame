@@ -4,6 +4,7 @@
 
 namespace dx3d
 {
+	// Forward declarations
 	class Base;
 	class Window;
 	class Game;
@@ -12,4 +13,16 @@ namespace dx3d
 	class RenderSystem;
 
 	class Logger;
+	class SwapChain;
+	class Display;
+
+	// Type aliases
+	using i32 = int;
+	using ui32 = unsigned int;
+	using f32 = float;
+	using d64 = double;
+
+	// Shared ptr: Object is only deallocated, when all referencing
+	// pointers were free'd before.
+	using SwapChainPtr = std::shared_ptr<SwapChain>;
 }

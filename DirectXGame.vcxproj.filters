@@ -39,6 +39,12 @@
     <ClCompile Include="DX3D\Source\Dx3D\Core\Logger.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="DX3D\Source\Dx3D\Graphics\SwapChain.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DX3D\Source\Dx3D\Game\Display.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DX3D\Include\DX3D\Core\Base.h">
@@ -66,6 +72,21 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="DX3D\Include\DX3D\Core\Common.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Source\Dx3D\Graphics\GraphicsLogUtils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Source\Dx3D\Graphics\SwapChain.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Source\Dx3D\Graphics\GraphicsResource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Math\Rect.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Game\Display.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
