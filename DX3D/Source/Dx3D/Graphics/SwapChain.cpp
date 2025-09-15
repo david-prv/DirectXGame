@@ -3,6 +3,8 @@
 dx3d::SwapChain::SwapChain(const SwapChainDesc& desc, const GraphicsResourceDesc& gDesc):
 	GraphicsResource(gDesc)
 {
+	if (!desc.winHandle) DX3DLogThrowInvalidArg("No window handle provided");
+
 	DXGI_SWAP_CHAIN_DESC dxgiDesc{};
 
 	// Various included headers may include custom MAX definitions.
