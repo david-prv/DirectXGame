@@ -4,7 +4,6 @@
 void dx3d::Game::run()
 {
 	MSG msg{};
-
 	while (m_isRunning)
 	{
 		while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
@@ -18,6 +17,7 @@ void dx3d::Game::run()
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
-		Sleep(1);
+		onInternalUpdate();
 	}
+
 }

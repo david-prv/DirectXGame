@@ -8,8 +8,16 @@ namespace dx3d
 	public:
 		SwapChain(const SwapChainDesc& desc, const GraphicsResourceDesc& gDesc);
 
+		void present(bool vsync = false);
+	private:
+		void reloadBuffers();
 	private:
 		Microsoft::WRL::ComPtr<IDXGISwapChain> m_swapChain{};
+		Microsoft::WRL::ComPtr<ID3D11RenderTargetView> m_rtv{};
+
+		// C++ feature: "Friend" classes to bypass encapsulation
+		// in scenarios, where two or more classes are tightly coupled.
+		friend class DeviceContext;
 	};
 }
 

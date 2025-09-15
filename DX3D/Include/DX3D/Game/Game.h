@@ -12,6 +12,8 @@ namespace dx3d
 
 		virtual void run() final;
 	private:
+		void onInternalUpdate();
+	private:
 		// FIRST defined attribute is LAST to be deallocated
 		std::unique_ptr<Logger> m_loggerPtr{};
 		std::unique_ptr<GraphicsEngine> m_graphicsEngine{};
