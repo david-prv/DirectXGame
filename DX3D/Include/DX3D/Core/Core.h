@@ -16,6 +16,7 @@ namespace dx3d
 	class DeviceContext;
 	class ShaderBinary;
 	class GraphicsPipelineState;
+	class VertexBuffer;
 
 	// Type aliases
 	using i32 = int;
@@ -29,4 +30,5 @@ namespace dx3d
 	using DeviceContextPtr = std::shared_ptr<DeviceContext>;
 	using ShaderBinaryPtr = std::shared_ptr<ShaderBinary>;
 	using GraphicsPipelineStatePtr = std::shared_ptr<GraphicsPipelineState>;
+	using VertexBufferPtr = std::shared_ptr<VertexBuffer>;
 }
